@@ -27,7 +27,6 @@ class Hydrator
         }
 
         unset($reflProp);
-        unset($refl);
 
         return $instance;
     }
@@ -48,7 +47,6 @@ class Hydrator
         }
 
         unset($reflProp);
-        unset($refl);
         
         return $data;
     }
