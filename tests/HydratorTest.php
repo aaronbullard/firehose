@@ -15,6 +15,7 @@ class HydratorTest extends TestCase
             'baz' => 'baz'
         ]);
 
+        $this->assertInstanceOf(Foo::class, $foo);
         $this->assertEquals('bar', $foo->bar());
         $this->assertEquals('baz', $foo->baz());
     }
