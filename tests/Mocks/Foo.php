@@ -1,6 +1,6 @@
 <?php
 
-namespace Firehose\Tests\Mocks\Entity;
+namespace Firehose\Tests\Mocks;
 
 class Foo
 {

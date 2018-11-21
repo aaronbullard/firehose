@@ -7,27 +7,13 @@ use ReflectionProperty;
 
 class Hydrator
 {
-    protected $classname;
-
-    public function __construct(string $classname)
+    public static function newInstance($classname, array $data = [])
     {
-        $this->classname = $classname;
-    }
-
-    public function hydrate(array $data = [])
-    {
-        $refl = new ReflectionClass($this->classname);
+        $refl = new ReflectionClass($classname);
 
         $instance = $refl->newInstanceWithoutConstructor();
 
         return static::mutate($instance, $data);
-    }
-
-    public static function newInstance($classname, array $data = [])
-    {
-        $self = new static($classname);
-
-        return $self->hydrate($data);
     }
 
     public static function mutate($instance, array $data = [])
