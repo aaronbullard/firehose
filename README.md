@@ -1,4 +1,6 @@
 # Firehose Hydrator
+[![Maintainability](https://api.codeclimate.com/v1/badges/5b94659aae96845f7024/maintainability)](https://codeclimate.com/github/aaronbullard/firehose/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5b94659aae96845f7024/test_coverage)](https://codeclimate.com/github/aaronbullard/firehose/test_coverage)
 
 PHP Reflection Class helper to Instantiate, Mutate, and Extract data directly within a class.
 
